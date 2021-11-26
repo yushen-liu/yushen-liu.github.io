@@ -1,0 +1,10 @@
+@article{Liu12cad,
+  author    = {Chao Wang and Yu-Shen Liu and Min Liu and Jun-Hai Yong and Jean-Claude Paul.},
+  title     = {{Robust shape normalization of 3D articulated volumetric models}},
+  journal   = {Computer-Aided Design},
+  volume    = {44},
+  number    = {12},
+  pages     = {1253--1268},
+  year      = {2012},
+}
+

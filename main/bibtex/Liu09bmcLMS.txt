@@ -1,0 +1,10 @@
+@article{Liu09bmcLMS,
+  author    = {Yu-Shen Liu and Yi Fang and Karthik Ramani},
+  title     = {Using least median of squares for structural superposition of flexible proteins},
+  journal   = {BMC Bioinformatics},
+  volume    = {10},
+  number    = {29},
+  pages     = {1--23},
+  year      = {2009},
+}
+

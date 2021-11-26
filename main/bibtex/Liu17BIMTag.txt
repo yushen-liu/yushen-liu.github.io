@@ -1,0 +1,10 @@
+@article{Liu17BIMTag,
+  author    = {Ge Gao and Yu-Shen Liu and Pengpeng Lin and Meng Wang and Ming Gu and Jun-Hai Yong},
+  title     = {{BIMTag: Concept-based automatic semantic annotation of online BIM product resources}},
+  journal   = {Advanced Engineering Informatics, 2017},
+  volume    = {31},
+  number    = {},
+  pages     = {48--61},
+  year      = {2017},
+}
+

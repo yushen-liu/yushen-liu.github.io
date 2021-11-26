@@ -1,0 +1,9 @@
+@article{Liu15VIV,
+  author    = {Yu-Shen Liu and Hong-Chen Deng and Min Liu and Lian-Jie Gong},
+  title     = {{Using visible internal volume to compute junction-aware shape descriptor of 3D articulated models}},
+  journal   = {Neurocomputing, under review, 2015},
+  volume    = {},
+  number    = {},
+  pages     = {},
+  year      = {},
+}

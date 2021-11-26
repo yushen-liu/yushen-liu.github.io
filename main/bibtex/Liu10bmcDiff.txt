@@ -1,0 +1,10 @@
+@article{Liu10bmcDiff,
+  author    = {Yu-Shen Liu and Qi Li and Guo-Qin Zheng and Karthik Ramani and William Benjamin},
+  title     = {Using diffusion distances for flexible molecular shape comparison},
+  journal   = {BMC Bioinformatics},
+  volume    = {11},
+  number    = {480},
+  pages     = {1--15},
+  year      = {2010},
+}
+

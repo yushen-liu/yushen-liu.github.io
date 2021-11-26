@@ -1,0 +1,10 @@
+@article{Liu10PR,
+  author    = {Yu-Shen Liu and Jing Yi and Hu Zhang and Guo-Qin Zheng and Jean-Claude Paul},
+  title     = {{Surface area estimation of digitized 3D objects using quasi-Monte Carlo methods}},
+  journal   = {Pattern Recognition},
+  volume    = {43},
+  number    = {11},
+  pages     = {3900--3909},
+  year      = {2010},
+}
+

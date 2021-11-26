@@ -1,0 +1,8 @@
+@inproceedings{Liu07spm,
+  author    = {Yu-Shen Liu and Min Liu and Daisuke Kihara and Karthik Ramani},
+  title     = {Salient critical points for meshes},
+  booktitle = {ACM Symposium on Solid and Physical Modeling (SPM'07)},
+  pages     = {277--282},
+  year      = {2007},
+}
+

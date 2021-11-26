@@ -1,0 +1,10 @@
+@article{Liu13AME,
+  author    = {Dongxing Cao and Shengfeng Qin and Yu-Shen Liu},
+  title     = {Advances in Conceptual Design Theories, Methodologies, and Applications},
+  journal   = {Advances in Mechanical Engineering},
+  volume    = {207492},
+  number    = {},
+  pages     = {1--3},
+  year      = {2013},
+}
+

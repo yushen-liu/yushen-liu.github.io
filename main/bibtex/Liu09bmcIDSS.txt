@@ -1,0 +1,10 @@
+@article{Liu09bmcIDSS,
+  author    = {Yu-Shen Liu and Yi Fang and Karthik Ramani},
+  title     = {{IDSS: deformation invariant signatures for molecular shape comparison}},
+  journal   = {BMC Bioinformatics},
+  volume    = {10},
+  number    = {157},
+  pages     = {1--14},
+  year      = {2009},
+}
+

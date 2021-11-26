@@ -1,0 +1,10 @@
+@article{Liu08CAD,
+  author    = {M. Du and Yu-Shen Liu},
+  title     = {An extension on robust directed projection of points onto point clouds},
+  journal   = {Computer-Aided Design},
+  volume    = {40},
+  number    = {5},
+  pages     = {537--553},
+  year      = {2008},
+}
+

@@ -1,0 +1,10 @@
+@article{Liu06-LSP,
+  author    = {Yu-Shen Liu and Jean-Claude Paul and Jun-Hai Yong and Pi-Qiang Yu and Hui Zhang and Jia-Guang Sun and Karthik Ramani},
+  title     = {Automatic least-squares projection of points onto point clouds with applications in reverse engineering},
+  journal   = {Computer-Aided Design},
+  volume    = {38},
+  number    = {12},
+  pages     = {1251--1263},
+  year      = {2006},
+}
+

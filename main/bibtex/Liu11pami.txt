@@ -1,0 +1,10 @@
+@article{Liu11pami,
+  author    = {Yu-Shen Liu and Karthik Ramani and Min Liu},
+  title     = {Computing the inner distances of volumetric models for articulated shape description with a visibility graph},
+  journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume    = {23},
+  number    = {12},
+  pages     = {2538--2544},
+  year      = {2011},
+}
+

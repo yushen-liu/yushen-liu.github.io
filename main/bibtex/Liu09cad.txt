@@ -1,0 +1,10 @@
+@article{Liu09cad,
+  author    = {Yu-Shen Liu and Karthik Ramani},
+  title     = {Robust principal axes determination for point-based shapes using least median of squares},
+  journal   = {Computer-Aided Design},
+  volume    = {41},
+  number    = {4},
+  pages     = {293--305},
+  year      = {2009},
+}
+

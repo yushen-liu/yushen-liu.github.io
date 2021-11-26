@@ -1,0 +1,10 @@
+@article{Liu14TSWJ,
+  author    = {Yu-Shen Liu and Heng Li and Haijiang Li and Pieter Pauwels and Jakob Beetz},
+  title     = {{Recent Advances on Building Information Modeling (BIM)}},
+  journal   = {The Scientific World Journal, in press, 2014},
+  volume    = {},
+  number    = {},
+  pages     = {},
+  year      = {},
+}
+

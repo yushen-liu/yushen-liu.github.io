@@ -1,0 +1,10 @@
+@article{Liu06,
+  author    = {Yu-Shen Liu and Jun-Hai Yong and Hui Zhang and Dong-Ming Yan and Jia-Guang Sun},
+  title     = {{A quasi-Monte Carlo method for computing areas of point-sampled surfaces}},
+  journal   = {Computer-Aided Design},
+  volume    = {38},
+  number    = {1},
+  pages     = {55--68},
+  year      = {2006},
+}
+

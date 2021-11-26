@@ -1,0 +1,10 @@
+@article{Liu15SigPro,
+  author    = {Jinlong Feng and Yu-Shen Liu and Lianjie Gong},
+  title     = {{Junction-aware shape descriptor for 3D articulated models using local shape-radius variation}},
+  journal   = {Signal Processing},
+  volume    = {112},
+  number    = {},
+  pages     = {4--16},
+  year      = {2015},
+}
+

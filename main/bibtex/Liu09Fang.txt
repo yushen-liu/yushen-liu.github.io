@@ -1,0 +1,10 @@
+@article{Liu09Fang,
+  author    = {Yi Fang and Yu-Shen Liu and Karthik Ramani},
+  title     = {{Three dimensional shape comparison of flexible protein using the local-diameter descriptor}},
+  journal   = {BMC Structural Biology},
+  volume    = {2009},
+  number    = {9},
+  pages     = {29},
+  year      = {},
+}
+
