@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta content="all" name="robots" />
+		<meta name="author" content="Ge Gao,Yu-Shen Liu,Pengpeng Lin,Meng Wang,Ming Gu,Jun-Hai Yong" />
+		<meta name="Copyright" content="© BIM Research Group, School of Software, Tsinghua University," />
+		<meta name="description" content="BIMTag: Concept-based automatic semantic annotation of online BIM product resources" />
+		<meta name="keywords" content="BIMTag: Concept-based automatic semantic annotation of online BIM product resources" />
+		<link rel="icon" href="../sub/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="../sub/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" rev="stylesheet" href="../sub/index.css" type="text/css" media="all" />
+		<title>SeqViews2SeqLabels: Learning 3D Global Features via Aggregating Sequential Views by RNN with Attention</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="centerContent">
+				<div class="banner">
+				</div>
+				<h1 class="paperTitle">SeqViews2SeqLabels: Learning 3D Global Features via Aggregating Sequential Views by RNN with Attention</h1> 
+				<p class="authors">
+				<a>Zhizhong Han</a>,
+				<a>Mingyang Shang</a>,
+				<a>Zhenbao Liu</a>,
+				<a>Chi-Man Vong</a>,
+				<a href="../">Yu-Shen Liu</a><sup><a class="star" href="#comm">*</a></sup>,
+				<a>Junwei Han</a>,
+				<a>Matthias Zwicker</a>,
+				<a>C.L. Philip Chen</a>
+				</p> 
+				<p class="contact">
+					School of Software, Tsinghua University, Beijing, China <br/>
+				</p>
+				<hr/>
+				<div class="itemContent" style="text-align:center"> 
+				
+				<a href="big/SeqViews2SeqLabels.png"><img src="small/SeqViews2SeqLabels.png" alt="" width="400px" ></a>
+				
+				<blockquote class="it"> 
+						Figure 1: The framework of SeqViews2SeqLabels.
+				</blockquote>
+				</div>
+			</div>
+			<div class="itemName">Abstract:</div>
+			<div class="itemContent">
+				<p>
+					Learning 3D global features by aggregating multiple views has been introduced as a successful strategy for 3D shape analysis. In recent deep learning models with end-to-end training, pooling is a widely adopted procedure for view aggregation. However, pooling merely retains the max or mean value over all views, which disregards the content information of almost all views and also the spatial information among the views. To resolve these issues, we propose Sequential Views To Sequential Labels (SeqViews2SeqLabels) as a novel deep learning model with an encoder-decoder structure based on Recurrent Neural Networks (RNNs) with attention. SeqViews2SeqLabels consists of two connected parts, an encoder-RNN followed by a decoder-RNN, that aim to learn the global features by aggregating sequential views and then performing shape classification from the learned global features, respectively. Specifically, the encoder-RNN learns the global features by simultaneously encoding the spatial and content information of sequential views, which captures the semantics of the view sequence. With the proposed prediction of sequential labels, the decoder-RNN performs more accurate classification using the learned global features by predicting sequential labels step-by-step. Learning to predict sequential labels provides more and finer discriminative information among shape classes to learn, which alleviates the overfitting problem inherent in training using a limited number of 3D shapes. Moreover, we introduce an attention mechanism to further improve the discriminative ability of SeqViews2SeqLabels. This mechanism increases the weight of views that are distinctive to each shape class, and it dramatically reduces the effect of selecting the first view position. Shape classification and retrieval results under three large-scale benchmarks verify that SeqViews2SeqLabels learns more discriminative global features by more effectively aggregating sequential views than state-of-the-art methods.
+				</p>
+			</div>
+
+			<div class="itemName"> Links:</div>
+            <div class="itemContent"> 
+				<!-- Platform Prototype [<a href="http://166.111.80.191:8001/tag">BIMTag</a>] -->
+				Paper [<a href="../main/pdf/LiuYS_TIP19RNN.pdf">1.25MB</a>]
+				<br>
+				Code [<a href="SeqViews2SeqLabels.zip" download="SeqViews2SeqLabels.zip">download</a>][<a href="https://github.com/mingyangShang/SeqViews2SeqLabels">github</a>]
+				<br />
+				Dataset [<a href="http://modelnet.cs.princeton.edu/">ModelNet</a>], [<a href="https://www.shapenet.org/">ShapeNet</a>]
+			</div>
+
+			<div class="itemName"> Result:</div>
+			<div class="itemContent" style="text-align:center">
+				<a href="big/modelnet10_classification.png"><img src="big/modelnet10_classification.png" width="500" alt="modelnet10 classification"></a>
+						<blockquote class="it">
+						Figure 2: Modelnet10 Classification result.
+						</blockquote>
+				<a href="big/modelnet40_classification.png"><img src="big/modelnet40_classification.png" width="500" alt="modelnet40 classification"></a>
+					<blockquote class="it">
+					Figure 3: Modelnet40 Classification result.</blockquote>
+				<a href="big/modelnet_retrieval.png"><img src="big/modelnet_retrieval.png" width="500" alt="modelnet retrieval"></a>
+						<blockquote class="it">
+						Figure 4: Modelnet Retrieval result.
+						</blockquote>
+				<a href="big/shapenet_retrieval.png"><img src="big/shapenet_retrieval.png" width="500" alt="shapenet retrieval"></a>
+					<blockquote class="it">
+					Figure 5: Shapenet Retrieval result.</blockquote>
+			</div>
+
+			<div class="itemName">Acknowledgements:</div>
+			<div class="itemContent">
+				The authors appreciate the comments and suggestions of all reviewers, whose comments significantly improved this paper. This work was supported by National Key R&D Program of China
+(2018YFB0505400), in part by the National Natural Science Foundation of
+China under Grant 61472202, 61672430, Swiss National Science Foundation
+project nr. 169151, MYRG2018-00138-FST, MYRG2016-00134-FST, FDCT/273/2017/A,
+and NWPU Basic Research Fund under Grant 3102018jcc001.
+			</div>
+			<hr/>
+			<div class="itemName">Citation:</div>
+			<div class="itemContent">
+				If you find this work and source code useful, please cite the following paper:<br /><br />
+				&nbsp;&nbsp;&nbsp;&nbsp;
+Zhizhong Han, Mingyang Shang, Zhenbao Liu, Chi-Man Vong, Yu-Shen Liu, Junwei Han, Matthias Zwicker, C.L. Philip Chen. SeqViews2SeqLabels: Learning 3D Global Features via Aggregating Sequential Views by RNN with Attention. IEEE Transactions on Image Processing, 2019, 28(2): 658-672.
+				
+			</div>
+			<hr/>
+			<div class="itemName">Contact:</div>
+			<div class="itemContent">
+				<a name="comm" id="comm"></a>
+				Dr. Yu-Shen Liu, Email address: <a href="mailto:liuyushen@tsinghua.edu.cn">liuyushen@tsinghua.edu.cn</a>.<br>
+				Zhizhong Han, Email address: <a href="mailto:h312h@mail.nwpu.edu.cn">h312h@mail.nwpu.edu.cn</a>.<br>
+				Mingyang Shang, Email address: <a href="mailto:smy16@mails.tsinghua.edu.cn">smy16@mails.tsinghua.edu.cn</a>.
+			</div>
+		</div>	
+	<script src="../common/js/jquery-1.5.min.js" type="text/javascript" ></script>
+	<script type="text/javascript" src="../common/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../common/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>	
+	<link rel="stylesheet" type="text/css" href="../common/js/fancybox/jquery.fancybox-1.3.4.css" media="screen">
+	<script type="text/javascript" >
+	<!--
+		$(function() {
+			$("a:has(img):not(.down)").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+		})
+	-->
+	</script>
+	</body>
+</html>

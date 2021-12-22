@@ -1,0 +1,7 @@
+@article{feng2014junction,
+  title={Junction-aware shape descriptor for 3D articulated models using local shape-radius variation},
+  author={Feng, Jinlong and Liu, Yu-Shen and Gong, Lianjie},
+  journal={Signal Processing},
+  year={2014},
+  publisher={Elsevier}
+}

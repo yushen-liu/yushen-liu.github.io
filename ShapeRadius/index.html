@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta content="all" name="robots" />
+		<meta name="author" content="Jinlong Feng,Yu-Shen Liu, Lianjie Gong" />
+		<meta name="Copyright" content="© BIM Research Group, School of Software, Tsinghua University" />
+		<meta name="description" content="Junction-aware shape descriptor for 3D articulated models using local shape-radius variation" />
+		<link rel="icon" href="../sub/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="../sub/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" rev="stylesheet" href="images/index.css" type="text/css" media="all" />
+		<title>Junction-aware shape descriptor for 3D articulated models using local shape-radius variation</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="centerContent">
+				<div class="banner">
+				</div>
+				<h1 class="paperTitle">Junction-aware shape descriptor for 3D articulated models using local shape-radius variation</h1> 
+				<p class="authors">Jinlong Feng<sup>a</sup>,
+				<a href="http://cgcad.thss.tsinghua.edu.cn/liuyushen/">Yu-Shen Liu</a><sup>a,b,c,<a class="star" href="#comm">*</a></sup>,
+				<a>Lianjie Gong</a><sup>a</sup></p> 
+				<p class="contact">
+<sup>a</sup>School of Software, Tsinghua University, Beijing, 100084, China<br>
+					<sup>b</sup>Key Laboratory for Information System Security, Ministry of Education of China <br>
+					<sup>c</sup>Tsinghua National Laboratory for Information Science and Technology <br>
+				</p>
+				<hr>
+				<div class="itemContent"> 
+				
+				<a href="http://cgcad.thss.tsinghua.edu.cn/liuyushen/ShapeRadius/images/1.PNG"><img src="images/1.PNG" alt="Junction-aware shape descriptor for 3D articulated models using local shape-radius variation" width="600"></a>
+				<blockquote class="it"> 
+				Figure 1:  Visualizing the SDF value and our junction-aware shape descriptor. Rows are hand, horse, teapot and camel. The leftmost column shows the original models, the middle one visualizes the SDF value, and the rightmost one displays our junction-aware shape descriptor. The high values are displayed by warmer colors (red and yellow), while the low values are displayed by cooler colors (green and blue). (For interpretation of the references to color in this figure caption, the reader is referred to the web version of this article.)</blockquote>
+				</div>
+			</div>
+			<div class="itemName">Abstract:</div>
+			<div class="itemContent">An  articulated  model  is  composed  of  a  set  of  rigid  parts  connected by some  flexible junctions. The junction, as a critical local feature, provides valuable information for many 3D semantic analysis applications such as feature recognition, semantic segmentation, shape matching, motion tracking and functional prediction. However, efficient description and detection of junctions still remain a research challenge due to high complexity of 3D articulated deformation. This paper presents a new junction-aware shape descriptor for a 3D articulated model defined by a closed mesh surface. The core idea is to exploit the local shape-radius variation for encoding junction information on the shape boundary surface, where the shape-radius at each point on the surface is the radius of corresponding medial balls within the shape. The presented descriptor is typically computed using a center-surround filter operator, which calculates the Gaussian-weighted average of shape-radius in the neighborhood of each point on the surface. Our descriptor is robust to articulation and can reflect the junction feature well without any explicit shape decomposition or prior  skeleton  extraction  procedure.  The  experimental  results  and  several  potential applications are proposed for demonstrating the effectiveness of our method.
+</div>
+			<div class="itemName"> Links:</div>
+            <div class="itemContent"> 
+				Paper(PDF) [<a href="../main/pdf/LiuYS_SP15Junction.pdf">0.70MB</a>]
+			</div>
+			<div class="itemName"> Results:</div>
+			<div class="itemContent">
+					<a href="http://cgcad.thss.tsinghua.edu.cn/liuyushen/ShapeRadius/images/2.PNG"><img src="images/2.PNG" alt="models of experiment" width="415"></a>
+						<blockquote class="it">
+						Figure 2:  Comparing our junction-aware shape descriptor with mean curvature and mesh saliency. Rows are vase, deer, ant and octopus. The leftmost column shows the values of mean curvature, the middle one visualizes the values of mesh saliency, and the rightmost one displays our junction-aware shape descriptor.</blockquote>
+					<a href="http://cgcad.thss.tsinghua.edu.cn/liuyushen/ShapeRadius/images/3.PNG"><img src="images/3.PNG" alt="results of experiment" width="455"></a>
+						<blockquote class="it">
+						Figure 3:  Approximating the handle loops (blue curves). (a) Hand. (b) Vase. (c) Ant. (d) Octopus. (e) Teapot. (For interpretation of the references to color in this figure caption, the reader is referred to the web version of this article.). </blockquote>
+			</div>
+
+			<div class="itemName">Acknowledgements:</div>
+			<div class="itemContent">This  research  is  supported  by  the  National  Science Foundation of China (61272229, 61003095), the National Technological Support Program for the 12th-Five-Year Plan of  China  (2012BAJ03B07).  The  second  author  is  also supported by Chinese 863 Program (2012AA040902) and Chinese 973 Program (2010CB328001).</div>
+
+            <div class="itemName">Citation</div>
+            <div class="itemContent"> 
+				[<a href="bibtex.txt">Bibtex</a>] Jinlong Feng, <strong>Yu-Shen Liu</strong>, Lianjie Gong. Junction-aware shape descriptor for 3D articulated models using local shape-radius variation. <b><i>Signal Processing,</i></b> 2015, 112: 4-16. (<b>SCI</b>, 2013 Impact factor: 2.238).
+			</div>
+
+			<hr>
+			<div class="itemName">Contact:</div>
+			<div class="itemContent">
+				<a name="comm" id="comm"></a>
+				Dr. Yu-Shen Liu, Email address: <a href="mailto:liuyushen@tsinghua.edu.cn">liuyushen@tsinghua.edu.cn</a>.<br>
+				Jinlong Feng, Email address: <a href="mailto:jingsun001@gmail.com">therealoneisneo@gmail.com</a>.
+			</div>
+		</div>		
+	<script src="IFCCompressor%20%20A%20novel%20content-based%20compression%20algorithm%20for%20optimizing%20the%20IFC%20files_files/jquery-1.js" type="text/javascript"></script>
+	<script type="text/javascript" src="IFCCompressor%20%20A%20novel%20content-based%20compression%20algorithm%20for%20optimizing%20the%20IFC%20files_files/jquery_002.js"></script>
+	<script type="text/javascript" src="IFCCompressor%20%20A%20novel%20content-based%20compression%20algorithm%20for%20optimizing%20the%20IFC%20files_files/jquery.js"></script>	
+	<link rel="stylesheet" type="text/css" href="IFCCompressor%20%20A%20novel%20content-based%20compression%20algorithm%20for%20optimizing%20the%20IFC%20files_files/jquery.css" media="screen">
+	<script type="text/javascript">
+	<!--
+		$(function() {
+			$("a:has(img):not(.down)").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+		})
+	-->
+	</script>
+	
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta content="all" name="robots" />
+		<meta name="author" content="Ge Gao,Yu-Shen Liu,Pengpeng Lin,Meng Wang,Ming Gu,Jun-Hai Yong" />
+		<meta name="Copyright" content="© BIM Research Group, School of Software, Tsinghua University," />
+		<meta name="description" content="BIMTag: Concept-based automatic semantic annotation of online BIM product resources" />
+		<meta name="keywords" content="BIMTag: Concept-based automatic semantic annotation of online BIM product resources" />
+		<link rel="icon" href="../sub/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="../sub/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" rev="stylesheet" href="../sub/index.css" type="text/css" media="all" />
+		<title>Point2Sequence: Learning the Shape Representation of 3D Point Clouds with an
+Attention-based Sequence to Sequence Network</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="centerContent">
+				<div class="banner">
+				</div>
+				<h1 class="paperTitle">Point2Sequence: Learning the Shape Representation of 3D Point Clouds with an
+Attention-based Sequence to Sequence Network</h1> 
+				<p class="authors">
+				<a>Xinhai Liu</a>,
+				<a>Zhizhong Han</a>,
+				<a href="../">Yu-Shen Liu</a><sup><a class="star" href="#comm">*</a></sup>,
+				<a>Matthias Zwicker</a>,
+				</p> 
+				<p class="contact">
+					School of Software, Tsinghua University, Beijing, China <br/>
+				</p>
+				<hr/>
+				<div class="itemContent" style="text-align:center"> 
+				
+				<a href="big/Point2Sequence.png"><img src="big/Point2Sequence.png" alt="" width="400px" ></a>
+				
+				<blockquote class="it"> 
+						Figure 1: The framework of Point2Sequence.
+				</blockquote>
+				</div>
+			</div>
+			<div class="itemName">Abstract:</div>
+			<div class="itemContent">
+				<p>
+					Exploring contextual information in the local region is important
+for shape understanding and analysis. Existing studies
+often employ hand-crafted or explicit ways to encode contextual
+information of local regions. However, it is hard to
+capture fine-grained contextual information in hand-crafted
+or explicit manners, such as the correlation between different
+areas in a local region, which limits the discriminative
+ability of learned features. To resolve this issue, we
+propose a novel deep learning model for 3D point clouds,
+named Point2Sequence, to learn 3D shape features by capturing
+fine-grained contextual information in a novel implicit
+way. Point2Sequence employs a novel sequence learning
+model for point clouds to capture the correlations by
+aggregating multi-scale areas of each local region with attention.
+Specifically, Point2Sequence first learns the feature
+of each area scale in a local region. Then, it captures the
+correlation between area scales in the process of aggregating
+all area scales using a recurrent neural network (RNN)
+based encoder-decoder structure, where an attention mechanism
+is proposed to highlight the importance of different
+area scales. Experimental results show that Point2Sequence
+achieves state-of-the-art performance in shape classification
+and segmentation tasks.
+				</p>
+			</div>
+
+			<div class="itemName"> Links:</div>
+            <div class="itemContent"> 
+				<!-- Platform Prototype [<a href="http://166.111.80.191:8001/tag">BIMTag</a>] -->
+				Paper [<a href="../main/pdf/LiuYS_AAAI19_Point2Sequence.pdf">1.35MB</a>]
+				<br>
+				PPT [<a href="files/Point2Sequence_AAAI2019.pptx" download="Point2Sequence_AAAI2019.pptx">Point2Sequence_AAAI2019.pptx</a>]
+				<!--Code [<a href="SeqViews2SeqLabels.zip" download="SeqViews2SeqLabels.zip">download</a>][<a href="https://github.com/mingyangShang/SeqViews2SeqLabels">github</a>]-->
+				<br />
+				Code [<a href="https://github.com/liuxinhai/Point2Sequence">github</a>]
+				<br>
+				Dataset [<a href="http://modelnet.cs.princeton.edu/">ModelNet</a>], [<a href="https://www.shapenet.org/">ShapeNet</a>]
+				<br />
+			</div>
+
+			<div class="itemName"> Result:</div>
+			<div class="itemContent" style="text-align:center">
+				<a href="big/modelnet_classification.png"><img src="big/modelnet_classification.png" width="500" alt="ModelNet classification"></a>
+						<blockquote class="it">
+						Figure 2: ModelNet classification result.
+						</blockquote>
+				<a href="big/shapenet_segmentation.png"><img src="big/shapenet_segmentation.png" width="500" alt="Shapenet segmentation"></a>
+						<blockquote class="it">
+						Figure 3: ShapeNet segmentation result.
+						</blockquote>
+				<a href="big/segmentation_visualization.png"><img src="big/segmentation_visualization.png" width="500" alt="Shapenet segmentation visualization"></a>
+						<blockquote class="it">
+						Figure 4: Visualization of segmentation on ShapeNet.
+						</blockquote>
+			</div>
+
+			<div class="itemName">Acknowledgements:</div>
+			<div class="itemContent">
+				Yu-Shen Liu is the corresponding author. This work
+was supported by National Key R&D Program of China
+(2018YFB0505400), the National Natural Science Foundation
+of China (61472202), and Swiss National Science Foundation
+grant (169151). We thank all anonymous reviewers
+for their constructive comments.
+			</div>
+			<hr/>
+			<div class="itemName">Citation:</div>
+			<div class="itemContent">
+				If you find this work and source code useful, please cite the following paper:<br /><br />
+				&nbsp;&nbsp;&nbsp;&nbsp;
+Xinhai Liu, Zhizhong Han, Yu-Shen Liu, Matthias Zwicker. Point2Sequence: Learning the Shape Representation of 3D Point Clouds with an
+Attention-based Sequence to Sequence Network. AAAI, 2019.
+				
+			</div>
+			<hr/>
+			<div class="itemName">Contact:</div>
+			<div class="itemContent">
+				<a name="comm" id="comm"></a>
+				Dr. Yu-Shen Liu, Email address: <a href="mailto:liuyushen@tsinghua.edu.cn">liuyushen@tsinghua.edu.cn</a>.<br>
+				Xinhai Liu, Email address: <a href="mailto:lxh17@mails.tsinghua.edu.cn">lxh17@mails.tsinghua.edu.cn</a>.
+			</div>
+		</div>	
+	<script src="../common/js/jquery-1.5.min.js" type="text/javascript" ></script>
+	<script type="text/javascript" src="../common/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../common/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>	
+	<link rel="stylesheet" type="text/css" href="../common/js/fancybox/jquery.fancybox-1.3.4.css" media="screen">
+	<script type="text/javascript" >
+	<!--
+		$(function() {
+			$("a:has(img):not(.down)").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+		})
+	-->
+	</script>
+	</body>
+</html>
