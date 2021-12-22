@@ -1,0 +1,154 @@
+
+<!-- saved from url=(0043)https://engineering.purdue.edu/PRECISE/IDSS -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+  <title>IDSS: Inner Distance Shape Signature</title>
+  
+</head>
+<body>
+  
+  <div id="header" tal:replace="structure template/standard_html_header">
+	<div class="Section1">
+		<p>
+			<span style="font-size: medium;">&nbsp;</span></p>
+		<p align="center" style="text-align: center;">
+			<br>
+			<span style="font-size: medium;"><img alt="" height="101" id="_x0000_i1027" src="./idss_index_files/researchImg" width="819"></span></p>
+		<div align="center">
+			<table border="0" cellpadding="0" cellspacing="3" class="MsoNormalTable" style="width: 600pt;" width="1000">
+				<tbody>
+					<tr style="">
+						<td colspan="2" style="padding: 0.75pt;">
+							<p align="center" class="MsoNormal" style="margin-bottom: 12pt; text-align: center;">
+								<span style="font-size: large;"><b><span class="style91">IDSS: deformation invariant shape signatures of flexible proteins</span></b></span><br style="">
+								<span style="font-size: medium;"> </span></p>
+							<p align="center" class="style7" style="text-align: center;">
+								<span style="font-size: medium;"><b>Yu-<span class="SpellE">Shen</span> Liu<sup>1</sup> &nbsp;&nbsp;&nbsp;<a href="http://engineering.purdue.edu/~fang4/">Yi Fang</a><sup>1</sup> &nbsp;&nbsp;&nbsp;<span class="SpellE">Karthik</span> Ramani<sup>1,2</sup> &nbsp;&nbsp;&nbsp;<br>
+								<br>
+								<sup>1</sup>School of Mechanical Engineering<br>
+								<sup>2</sup></b></span><st1:placetype w:st="on"></st1:placetype><span style="font-size: medium;"><st1:placetype w:st="on"><b>School</b></st1:placetype></span><span style="font-size: medium;"><st1:placetype w:st="on"></st1:placetype></span><span style="font-size: medium;"><b> of </b></span><st1:placename w:st="on"></st1:placename><span style="font-size: medium;"><st1:placename w:st="on"><b>Electrical Computer Engineering</b></st1:placename></span><span style="font-size: medium;"><st1:placename w:st="on"></st1:placename></span><span style="font-size: medium;"><b> (by courtesy)<br>
+								</b></span><st1:placename w:st="on"><span style="font-size: medium;"><b>Purdue</b></span></st1:placename><st1:placetype w:st="on"></st1:placetype><span style="font-size: medium;"><st1:placetype w:st="on"><b>University</b></st1:placetype></span><span style="font-size: medium;"><st1:placetype w:st="on"></st1:placetype></span><span style="font-size: medium;"><b>, </b></span><st1:place w:st="on"><st1:city w:st="on"></st1:city><span style="font-size: medium;"><st1:city w:st="on"><b>West Lafayette</b></st1:city></span><span style="font-size: medium;"><st1:city w:st="on"></st1:city></span><span style="font-size: medium;"><b>, </b></span><st1:state w:st="on"></st1:state><span style="font-size: medium;"><st1:state w:st="on"><b>IN</b></st1:state></span><span style="font-size: medium;"><st1:state w:st="on"></st1:state></span><span style="font-size: medium;"><b>, </b></span><st1:postalcode w:st="on"></st1:postalcode><span style="font-size: medium;"><st1:postalcode w:st="on"><b>47907</b></st1:postalcode></span><span style="font-size: medium;"><st1:postalcode w:st="on"></st1:postalcode></span><span style="font-size: medium;"><b>, </b></span><st1:country-region w:st="on"><span style="font-size: medium;"><b>USA</b></span></st1:country-region></st1:place></p>
+							<p>
+								&nbsp;</p>
+						</td>
+					</tr>
+					<tr style="">
+						<td style="padding: 0.75pt;">
+							<p class="MsoNormal">
+								<o:p><span style="font-size: medium;">&nbsp;</span></o:p></p>
+						</td>
+						<td style="padding: 0.75pt;">
+							<p class="MsoNormal">
+								<span style="font-size: medium;"><o:p>&nbsp;</o:p></span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+						</td>
+					</tr>
+					<tr style="height: 220.5pt;">
+						<td style="padding: 0.75pt; background: rgb(255, 204, 153) none repeat scroll 0% 0%; width: 62.25pt; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 220.5pt;" width="104">
+							<p class="MsoNormal">
+								<span style="font-size: large;"><b><span class="style71">Abstract</span></b></span></p>
+						</td>
+						<td style="padding: 0.75pt; width: 533.25pt; height: 220.5pt;" width="889">
+							<div>
+								<p class="MsoNormal" style="margin: 0in 20.9pt 6pt 12.25pt; text-align: justify;">
+									<span style="font-size: medium;">Comparison of proteins shapes is receiving more attention for understanding evolutionary relationships and for the prediction of function. Many existing shape-based protein comparison methods are effective for comparing rigid objects, but they can not handle shape deformation of flexible objects well. Nevertheless, proteins are flexible molecules that undergo significant structural changes and shape deformation as part of their function.</span></p>
+								<p class="MsoNormal" style="margin: 0in 20.55pt 0.0001pt 12.25pt; text-align: justify;">
+									<span style="font-size: medium;">We introduce the Inner Distance Shape Signature (IDSS) for describing the 3D shape of flexible proteins. The inner distance is defined as the length of the shortest path between landmark points within the shape, and it reflects well the protein structure and deformation without explicitly decomposition. Our IDSS is stored as a histogram which is a probability distribution of inner distance between all sample point pairs. We show that IDSS is insensitive to shape deformation of flexible proteins and more effective at capturing protein structures than traditional shape signatures. Our approach reduces the 3D shape comparison problem of flexible proteins to the comparison of IDSS. We evaluate and demonstrate the effectiveness of IDSS within a protein search engine application for a benchmark containing abundant conformational changes.</span></p>
+							</div>
+						</td>
+					</tr>
+					<tr style="height: 135pt;">
+						<td style="padding: 0.75pt; background: rgb(255, 204, 153) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 135pt;">
+							<p class="MsoNormal">
+								<span style="font-size: large;"><b><span style="font-family: Arial;">Downloads</span></b></span><b><span style="font-family: Arial;"><o:p></o:p></span></b></p>
+						</td>
+						<td style="padding: 0.75pt; height: 135pt;">
+							<ol start="1" type="1">
+								<li class="MsoNormal" style="color: blue;">
+									<span style="font-size: large;"><span style="color: windowtext;"><a href="data/README.pdf"><span style="font-size: medium;">README.pdf</span></a></span></span></li>
+								<li class="MsoNormal" style="color: blue;">
+									<span style="font-size: medium;"><span style="color: windowtext;"><a href="data/README.pdf"><o:p></o:p></a></span><span style="font-size: large;"><span style="color: windowtext;"><a href="data/tutorial.pdf"><span style="font-size: medium;"><span class="SpellE">Tutorial.pdf</span></span></a></span></span></span></li>
+								<li class="MsoNormal" style="color: blue;">
+									<span style="font-size: medium;"><span style="color: windowtext;"><a href="data/tutorial.pdf"><o:p></o:p></a></span><span style="font-size: large;"><span style="color: windowtext;"><a href="data/IDSS_win32exe.zip"><span style="font-size: medium;">IDSS_win32exe.zip</span></a></span></span></span></li>
+								<li class="MsoNormal" style="color: blue;">
+									<span style="font-size: medium;"><span style="color: windowtext;"><a href="data/IDSS_win32exe.zip"><o:p></o:p></a></span><a href="data/BenchmarkProtein.zip">Database (~7.5MB)</a>&nbsp;</span></li>
+								<li class="MsoNormal" style="color: blue;">
+									<span style="font-size: medium;"><span style="font-size: medium;"><a href="data/Demo.avi">Demo.avi (~29MB)</a> ,&nbsp; </span><span style="font-size: medium;"><span style="font-size: medium;"><a href="data/Demo.html">Demo.swf (~29MB)</a></span></span></span></li>
+							</ol>
+						</td>
+					</tr>
+					<tr style="height: 132pt;">
+						<td style="padding: 0.75pt; background: rgb(255, 204, 153) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 132pt;">
+							<p class="MsoNormal">
+								<span style="font-size: large;"><b><span style="font-family: Arial;">Examples</span></b></span><b><span style="font-family: Arial;"><o:p></o:p></span></b></p>
+						</td>
+						<td style="padding: 0.75pt; height: 132pt;">
+							<p>
+								<span style="font-size: medium;">&nbsp;</span></p>
+							<p>
+								<span style="font-size: medium;">&nbsp; &nbsp; &nbsp;&nbsp; <!--[if gte vml 1]><v:shapetype
+   id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+   path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:427.8pt;
+   height:414pt'>
+   <v:imagedata src="IDSS_files/image003.jpg" o:title="f01"/>
+  </v:shape><![endif]--><img alt="" border="0" height="630" src="./idss_index_files/idss001" v:shapes="_x0000_i1025" width="651"></span></p>
+							<p class="MsoNormal" style="margin: 0in 20.9pt 6pt 12.25pt; text-align: justify;">
+								<span style="font-size: medium;">Our inner distance (ID) signature is compared, for instance, to Euclidean distance (ED) signature from [</span><a href="http://portal.acm.org/citation.cfm?id=571647.571648"><span style="font-size: medium;">Osada02</span></a><span style="font-size: medium;">]. The first row shows the input four artificial proteins with the same main chain orientation but with different surface shapes. The second row shows the ID and ED signatures. In each plot, the vertical axis represents distance distribution. Note that ID is not sensitive to shape deformation, so four signatures are almost consistent; in contrast, ED is strongly sensitive to deformation.</span></p>
+							<p class="MsoNormal" style="margin: 0in 20.9pt 6pt 12.25pt; text-align: justify;">
+								&nbsp;</p>
+							<p class="MsoNormal" style="margin: 0in 20.9pt 6pt 12.25pt; text-align: justify;">
+								&nbsp;</p>
+							<p style="margin-left: 12pt; text-indent: -12pt;">
+								<span style="font-size: medium;">&nbsp; &nbsp; <!--[if gte vml 1]><v:shape id="_x0000_i1026"
+   type="#_x0000_t75" style='width:444.6pt;height:416.4pt'>
+   <v:imagedata src="IDSS_files/image001.jpg" o:title="IDSS"/>
+  </v:shape><![endif]--><img alt="" border="0" height="609" src="./idss_index_files/idss002" v:shapes="_x0000_i1026" width="651"></span></p>
+							<p class="MsoNormal" style="margin: 0in 20.9pt 6pt 12.25pt; text-align: justify;">
+								<span style="font-size: medium;">A screen shot from flexible proteins shape retrieval system using our IDSS <span class="SpellE">algortihm</span>. In this figure, the query protein's information including its name and Group ID is shown on the top-left, and the approximated shape based on inner distance is displayed. The query example from Group 1 has four deformation shapes, and the search system returns the first four proteins from the same group<br>
+								</span></p>
+							<p>
+								<span style="font-size: medium;">&nbsp;</span></p>
+						</td>
+					</tr>
+					<tr style="height: 132pt;">
+						<td style="padding: 0.75pt; background: rgb(255, 204, 153) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 132pt;">
+							<p class="MsoNormal">
+								<span style="font-size: large;"><b><span class="style71">Acknowledgment</span></b></span></p>
+						</td>
+						<td style="padding: 0.75pt; height: 132pt;">
+							<p class="MsoNormal" style="margin: 0in 20.9pt 6pt 12.25pt; text-align: justify;">
+								<span style="font-size: medium;">The database of Macromolecular Movements (</span><span style="font-size: medium;"><a href="http://www.molmovdb.org/"><span class="SpellE">MolMovDB</span></a>) used in this paper is provided by Mark B Gerstein and Samuel C Flores. This material is partly based upon work supported by the National Science Foundation under Grant IIS No. 0535156. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. We also acknowledge partial support from the National Institute of Health (GM-075004).</span></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="MsoNormal">
+			<span style="font-size: medium;"><script language="JavaScript" src="./idss_index_files/k.js.&#19979;&#36733;">
+</script></span><o:p><span style="font-size: medium;">&nbsp;</span></o:p></p>
+	</div>
+	<p>
+		<span style="font-size: medium;">&nbsp;</span></p>
+</div>
+
+
+
+
+
+</body></html>
