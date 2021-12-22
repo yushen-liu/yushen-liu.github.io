@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta content="all" name="robots" />
+		<meta name="author" content="Jing Sun,Yu-Shen Liu,Ge Gao,Xiao-Guang Han" />
+		<meta name="Copyright" content="© BIM Research Group, School of Software, Tsinghua University" />
+		<meta name="description" content="IFCCompressor: A novel content-based compression algorithm for optimizing the IFC files" />
+		<meta name="keywords"content="Building Information Modeling (BIM), Industry Foundation Classes (IFC), Content-based compression, IFC optimization" />
+		<link rel="icon" href="../sub/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="../sub/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" rev="stylesheet" href="../sub/index.css" type="text/css" media="all" />
+		<title>IFCCompressor: A content-based compression algorithm for optimizing Industry Foundation Classes files</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="centerContent">
+				<div class="banner">
+				</div>
+				<h1 class="paperTitle">IFCCompressor: A content-based compression algorithm for optimizing Industry Foundation Classes files</h1> 
+				<p class="authors">
+				<a>Jing Sun</a><sup>a</sup>,
+				<a href="../">Yu-Shen Liu</a><sup>a,b,c,<a class="star" href="#comm">*</a></sup>,
+				<a>Ge Gao</a><sup>a,d</sup>,
+				<a>Xiao-Guang Han</a><sup>a,d</sup>,
+				</p> 
+				<p class="contact">
+					<sup>a</sup>BIM Research Group, School of Software, Tsinghua University, Beijing, China <br/>
+					<sup>b</sup>Key Laboratory for Information System Security, Ministry of Education of China <br/>
+					<sup>c</sup>Tsinghua National Laboratory for Information Science and Technology <br/>
+					<sup>d</sup>Department of Computer Science and Technology, Tsinghua University <br/>
+				</p>
+                <p style="float: right"><a href="index_cn.html">中文版本</a></p>
+                <br/>
+				<hr/>
+				<div class="itemContent"> 
+				
+				<a href="images/Ifccompressor.jpg"><img src="images/Ifccompressor.jpg" alt="IFCCompressor: A novel content-based compression algorithm for optimizing the IFC files" width="550px" ></a>
+				<blockquote class="it"> 
+				Figure 1: A screen shot of the IFCCompressor tool. The left shows the main interface
+				of the tool, where an IFC file is selected and compressed with or without the option
+				“Float-Point Rounding (FPR)”. The right displays the comparison of file sizes between
+				the original file and compressed one.
+				</blockquote>
+				</div>
+			</div>
+			<div class="itemName">Abstract:</div>
+			<div class="itemContent">
+				As the commonly used open and neutral file format for Building Information Modeling (BIM) data,
+				IFC (Industry Foundation Classes) aims to facilitate interoperability between various software platforms in the AEC industry. 
+				However, the IFC files generated from different systems often contain enormous redundant information, 
+				which will greatly limit IFC-based data storage and exchange, management, transmission and other applications. To address this issue, this paper 
+				presents a content-based compression algorithm, named IFCCompressor, for optimizing IFC data files. Its goal is to make a large IFC file as small as 
+				possible by reducing its redundant information. The algorithm is achieved through an iterative compression procedure based on an IFC model's tree 
+				structure. The optimization procedure can be lossless or be constrained by an error bound. Compared with pure compression (ZIP) regardless of 
+				information content, the presented algorithm starts with a comprehensive analysis of structure and content of IFC file, and then eliminates its 
+				redundant information without changing the original file format. Unlike partial model extraction methods, our algorithm results in a complete IFC 
+				model but with a more compact IFC physical file. In contrast with some commercial IFC optimization tools such as Solibri IFC Optimizer, the algorithm 
+				can make the size of IFC files smaller. The experimental results show that the algorithm is particularly effective for some office/residential 
+				building models with a large number of duplicated components. The compression rate with our algorithm is generally very high (the average is 40.32%) 
+				for tested cases. <!--The online IFCCompressor tool and its demonstration can be accessed at: <a href="http://cgcad.thss.tsinghua.edu.cn/liuyushen/IFCCompressor/">IFCCompressor</a>.-->
+			</div>
+
+            <div class="itemName"> Links:</div>
+            <div class="itemContent"> 
+				IFCCompressor[<a href="index_software.html">Website</a>] &nbsp;&nbsp;&nbsp;<br/>
+				Source code[<a href="IFCCompressor-Code.zip" download="IFCCompressor-Code.zip">Download</a>]<br />
+				Test cases:<br/>
+				M1 [<a href="ifc/M1.ifc">55.8MB</a>] &nbsp;&nbsp;&nbsp;
+				M2 [<a href="ifc/M2.ifc">25.7MB</a>] &nbsp;&nbsp;&nbsp;
+				M3 [<a href="ifc/M3.ifc">7.1MB</a>] &nbsp;&nbsp;&nbsp;
+				M4 [<a href="ifc/M4.ifc">4.0MB</a>] &nbsp;&nbsp;&nbsp;
+				M5 [<a href="ifc/M5.ifc">3.2MB</a>] &nbsp;&nbsp;&nbsp;
+				M6 [<a href="ifc/M6.ifc">2.7MB</a>] &nbsp;&nbsp;&nbsp;
+				M1-M6 Packages [<a href="ifc/ifcModels.zip">zip</a>]
+			</div>
+            
+			<div class="itemContent"> 
+				Paper(PDF) [<a href="../main/pdf/LiuYS_AIC15IFCCompressor.pdf">2.79MB</a>]
+			</div>
+
+            
+			<div class="itemName"> Results:</div>
+			<div class="itemContent">
+					<a href="images/sampleModels.jpg"><img src="images/sampleModels.jpg" width="500" alt="models of experiment"></a>
+						<blockquote class="it">
+						Figure 2: Visualizing the models of six IFC files tested in the experiments.
+						</blockquote>
+					<a href="images/comp_result.jpg"><img  src="images/comp_result.jpg" width="500" alt="results of experiment"></a>
+						<blockquote class="it">
+						Figure 3: Comparing the file sizes for six test models compressed using our algorithm (with or without FPR), where the FPR error bound is typically set as 10<sup>−2</sup>.  </blockquote>
+			</div>
+
+			<div class="itemName">Acknowledgements:</div>
+			<div class="itemContent">
+					The authors appreciate the comments and suggestions of all anonymous reviewers, whose comments significantly improved this paper. The research is 
+supported by the National Science Foundation of China (61472202, 61272229, 61003095) and the National Technological Support
+Program for the 12th-Five-Year Plan of China (2012BAJ03B07). The second author is also supported by the Chinese 973 Program (2010CB328003). The third author is also 
+supported by the Chinese 863 Program (2012AA040902).
+
+			</div>
+            <div class="itemName">Citation</div>
+            <div class="itemContent"> 
+				[<a href="bibtex.txt">Bibtex</a>] Jing Sun, <strong>Yu-Shen Liu</strong>, Ge Gao, Xiao-Guang Han. IFCCompressor: A content-based compression algorithm for optimizing Industry Foundation Classes files. <b><i>Automation in Construction</i></b>, 2015, 50(2): 1-15. (<b>SCI</b>, 2013 Impact factor: 1.822)
+			</div>
+			<hr/>
+			<div class="itemName">Contact:</div>
+			<div class="itemContent">
+				<a name="comm" id="comm"></a>
+				Dr. Yu-Shen Liu, Email address: <a href="mailto:liuyushen@tsinghua.edu.cn">liuyushen@tsinghua.edu.cn</a>.<br/>
+				Jing Sun, Email address: <a href="mailto:jingsun001@gmail.com">jingsun001@gmail.com</a>.
+			</div>
+		</div>		
+	<script src="../common/js/jquery-3.2.1.min.js" type="text/javascript" ></script>
+	<script type="text/javascript" src="../common/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../common/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>	
+	<link rel="stylesheet" type="text/css" href="../common/js/fancybox/jquery.fancybox-1.3.4.css" media="screen">
+	<script type="text/javascript" >
+	<!--
+		$(function() {
+			$("a:has(img):not(.down)").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+		})
+	-->
+	</script>
+	</body>
+</html>
