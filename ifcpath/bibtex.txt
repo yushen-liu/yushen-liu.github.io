@@ -1,0 +1,9 @@
+@article{Liu12ifc,
+  author    = {Ya-Hong Lin and Yu-Shen Liu and Ge Gao and Xiao-Guang Han and Cheng-Yuan Lai and Ming Gu},
+  title     = {{The IFC-based path planning for 3D indoor spaces}},
+  journal   = {Advanced Engineering Informatics},
+  volume    = {27},
+  number    = {2},
+  pages     = {189--205},
+  year      = {2013},
+}

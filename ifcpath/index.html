@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta content="all" name="robots" />
+		<meta name="author" content="Ya-Hong Lin,Yu-Shen Liu,Ge Gao,Xiao-Guang Han,Ming Gu" />
+		<meta name="Copyright" content="© BIM Research Group, School of Software, Tsinghua University," />
+		<meta name="description" content="The IFC-based path planning for 3D indoor spaces" />
+		<meta name="keywords"content="Path planning,BIM,Industry Foundation Classes (IFC),Indoor spaces,Fast Marching Method (FMM)" />
+		<link rel="icon" href="../sub/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="../sub/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" rev="stylesheet" href="../sub/index.css" type="text/css" media="all" />
+		<title>The IFC-based path planning for 3D indoor spaces</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="centerContent">
+				<div class="banner">
+				</div>
+				<h1 class="paperTitle">The IFC-based path planning for 3D indoor spaces</h1> 
+				<p class="authors">
+				<a>Ya-Hong Lin</a><sup>a</sup>,
+				<a href="../">Yu-Shen Liu</a><sup>a,b,c,<a class="star" href="#comm">*</a></sup>,
+				<a>Ge Gao</a><sup>a,d</sup>,
+				<a>Xiao-Guang Han</a><sup>a,d</sup>,
+				<a>Ming Gu</a><sup>a,b,c</sup>
+				</p> 
+				<p class="contact">
+					<sup>a</sup>BIM Research Group, School of Software, Tsinghua University, Beijing, China <br/>
+					<sup>b</sup>Key Laboratory for Information System Security, Ministry of Education of China <br/>
+					<sup>c</sup>Tsinghua National Laboratory for Information Science and Technology <br/>
+					<sup>d</sup>Department of Computer Science and Technology, Tsinghua University <br/>
+				</p>
+				<hr/>
+				<div class="itemContent"> 
+				
+				<a href="big/mainpic.jpg"><img src="small/mainpic.jpg" alt="The IFC-based path planning for 3D indoor spaces" width="400px" ></a>
+				<blockquote class="it"> 
+					Fig1.Illustration of space discretization and mapping. (a) The original building
+					restored by the IFC file which contains walls, locked/unlocked doors, windows,
+					columns and furniture as well as dangerous equipments and private spaces defined.
+					(b) Discretize the building space into a N * N grid (e.g. N = 100), where the
+					value of each node in the grid is initially set to be 1 (navigable). (c) Map geometric
+					information of all IFC elements inside the space into the grid nodes, where the nodes
+					occupied by the building elements are simply changed as 0 (innavigable, black cells).
+					(d) According to Table 1, map semantic information of building elements into the
+					grid nodes, where the distribution of the hazard level around the furnace in the
+					space center is displayed in the gray color (the light gray is low risk and the dark
+					gray is high risk). Note that the black cells in (d) show the space occupied by the
+					building elements, while the yellow cells show the navigable space.
+				</blockquote>
+				</div>
+			</div>
+			<div class="itemName">Abstract:</div>
+			<div class="itemContent">
+				Path planning is a fundamental problem, especially for various AEC applications,
+				such as architectural design, indoor and outdoor navigation, and emergency evacu-
+				ation. However, the conventional approaches mainly operate path planning on 2D
+				drawings or building layouts by only considering the geometric information, while
+				losing abundant semantic information of building objects.
+				To address this issue, we introduce a new method to cope with path planning
+				for 3D indoor space through an IFC (Industry Foundation Classes) file as input.
+				As a major data exchange standard for Building Information Modeling (BIM), the
+				IFC standard is capable of restoring both geometric information and rich semantic
+				information of building objects to support lifecycle data sharing. Our method con-
+				sists of three main steps: (1) extracting both geometric and semantic information
+				of building elements defined within the IFC file, (2) discretizeing and mapping the
+				extracted information into a plane grid, (3) and finally finding the shortest path
+				based on the mapping for path planning using Fast Marching Method. We aim
+				to process different kinds of building elements and their corresponding properties
+				to obtain rich semantic information that enhances path planning. The paper also
+				presents some experiments to demonstrate the accuracy, efficiency and adaptability.
+			</div>
+			<div class="itemName"> Links:</div>
+            <div class="itemContent"> 
+				AVI(compact) [<a href="demo.avi">13.1MB</a>] &nbsp;&nbsp;&nbsp;
+				MOV [<a href="Demo.mov">44.1MB</a>] 
+			</div>
+			<div class="itemContent"> 
+				Paper(PDF) [<a href="../main/pdf/LiuYS_AEI12IFC.pdf">2.79MB</a>]
+			</div>
+            <div class="itemContent"> 
+				Installation [<a href="./programs/IFCPath.exe">12.4MB</a>] &nbsp;&nbsp;&nbsp;
+				Tutorial(PDF) [<a href="./IFCPath-tutorial.pdf">0.27MB</a>] &nbsp;&nbsp;&nbsp;
+				Test Cases [<a href="./programs/test_cases.zip">3.97MB</a>]
+			
+			</div>
+            
+
+			<div class="itemName"> Results:</div>
+			<div class="itemContent">
+					<a href="big/results.jpg"><img src="small/results.jpg" width="400" alt="results of experiment"></a>
+						<blockquote class="it">
+						 Fig2.The IFC-based path planning system works on the second floor of the
+						selected library. (a) is a bird's eye view of the south of the library. (b) is the full
+						floor plan of the second floor. (c) is the shortest path (blue color) from the southwest
+						entrance to the northeast reading room on the second floor of the library using our
+						system.
+						</blockquote>
+					<a href="big/multi.jpg"><img  src="small/multi.jpg" width="400" alt="results of experiment"></a>
+						<blockquote class="it">
+							Fig3.The shortest path inside a three-storey space (slabs are displayed in transparency), where the staircases are considered as the transit nodes of the path.  </blockquote>
+			</div>
+
+			<div class="itemName">Acknowledgements:</div>
+			<div class="itemContent">
+						The authors would like to thank Mr. Xiaogang Zhao for providing the Revit
+					model (Library of Xuzhou Institute of Architectural Technology) for exporting
+					to the IFC format. The research was supported by the National Science Foundation 
+					of China (61003095), the National Technological Support Program for
+					the 12th-Five-Year Plan of China (2012BAJ03B07), and Chinese 973 Program
+					(2010CB328001).
+			</div>
+			
+			<div class="itemName">Citation</div>
+            <div class="itemContent"> 
+				[<a href="bibtex.txt">Bibtex</a>] Ya-Hong Lin, <strong>Yu-Shen Liu</strong>, Ge Gao, Xiao-Guang Han, Cheng-Yuan Lai, Ming Gu. The IFC-based path planning for 3D indoor spaces. <b><i>Advanced Engineering Informatics</i></b>, 2013; 27(2): 189-205. (<b>SCI</b>, 2013 Impact factor: 2.068)<br>
+			</div>
+			<hr/>
+			<div class="itemName">Contact:</div>
+			<div class="itemContent">
+				<a name="comm" id="comm"></a>
+				Dr. Yu-Shen Liu, Email address: <a href="mailto:liuyushen@tsinghua.edu.cn">liuyushen@tsinghua.edu.cn</a>.
+			</div>
+		</div>		
+	<script src="../common/js/jquery-1.5.min.js" type="text/javascript" ></script>
+	<script type="text/javascript" src="../common/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../common/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>	
+	<link rel="stylesheet" type="text/css" href="../common/js/fancybox/jquery.fancybox-1.3.4.css" media="screen">
+	<script type="text/javascript" >
+	<!--
+		$(function() {
+			$("a:has(img):not(.down)").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+		})
+	-->
+	</script>
+	</body>
+</html>
