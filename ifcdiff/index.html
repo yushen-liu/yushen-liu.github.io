@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0058)http://cgcad.thss.tsinghua.edu.cn/liuyushen/IFCCompressor/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta content="all" name="robots" />
+		<meta name="author" content="Xin Shi,Yu-Shen Liu,Ge Gao,Pieter Pauwels" />
+		<meta name="Copyright" content="© BIM Research Group, School of Software, Tsinghua University" />
+		<meta name="description" content="IFCdiff : A content-based automatic comparison algorithm for Industry Foundation Classes files" />
+		<meta name="keywords" content="Building Information Modeling (BIM), Industry Foundation Classes (IFC), Content-based comparison, IFC similarity" />
+		<link rel="icon" href="../sub/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="../sub/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" rev="stylesheet" href="../sub/index.css" type="text/css" media="all" />
+		<title>IFCdiff: A content-based automatic comparison approach for IFC files with hierarchical structures</title>
+	</head>
+	<style type="text/css">
+	.row {
+		display: inline-block;
+	}
+	</style>
+	<body>
+		<div class="main">
+			<div class="centerContent">
+				<div class="banner">
+				</div>
+				<h1 class="paperTitle">IFCdiff: A content-based automatic comparison approach for IFC files with hierarchical structures</h1>
+				<p class="authors">
+					<a>Xin Shi</a><sup>a</sup>,
+					<a href="http://cgcad.thss.tsinghua.edu.cn/liuyushen/">Yu-Shen Liu</a><sup>a,b,c,<a class="star" href="http://cgcad.thss.tsinghua.edu.cn/liuyushen/IFCCompressor/#comm">*</a></sup>,
+					<a>Ge Gao</a><sup>a,d</sup>,
+					<a>Ming Gu</a><sup>a</sup>,
+					<a>Haijiang Li</a><sup>d</sup>
+				
+				</p>
+				<p class="contact">
+					<sup>a</sup>School of Software, Tsinghua University, Beijing, China <br>
+					<sup>b</sup>Key Laboratory for Information System Security, Ministry of Education of China <br>
+					<sup>c</sup>Tsinghua National Laboratory for Information Science and Technology <br>
+					<sup>d</sup>BRE Institute of Sustainable Engineering, Engineering School, Cardiff University, UK<br>
+				</p>
+				<hr>
+			</div>
+			<div class="itemContent">
+				
+				<a href="./images/ifcDiff.jpg"><img src="./images/ifcDiff.jpg" alt="A content-based comparison algorithm for detecting and quantifying the similarities and differences between IFC files" width="450px"></a>
+				<blockquote class="it">
+					Figure 1: A screen shot of the IFCdiff tool. The users import two IFC files to be compared and the similarity, missing rate and adding rate will be displayed.
+				</blockquote>
+				<a href="./images/IFCdiffVisualization.jpg"><img src="./images/IFCdiffVisualization.jpg" alt="visualization of the comparison result" width="550px"></a>
+				<div style="text-align: center;">
+				<a class="row" href="./images/IFCViewerFileA.png"><img src="./images/IFCViewerFileA.png" alt="visualization of the comparison result" width="400px"></a>
+				<a class="row" href="./images/IFCViewerFileB.png"><img src="./images/IFCViewerFileB.png" alt="visualization of the comparison result" width="400px"></a>
+				</div>
+				<blockquote class="it">
+					Figure 2: The screenshot of the IFCdiff viewer.
+				</blockquote>
+				
+			</div>
+			<div class="itemName">Abstract:</div>
+			<div class="itemContent">As IFC (Industry Foundation Classes) files used in construction industry are on the dramatic increase, it often requires effective IFC comparison methods to keep track of important changes occurring during the lifecycle of construction projects. However, most IFC comparisons are based on a visual inspection, a manual count and a check of selective attributes. Although a few techniques about automatic IFC comparisons have been developed recently, they are usually very time-consuming, and are sensitive to the GUID change or redundant instances in IFC files. To address these issues, this paper presents a content-based automatic comparison approach, named IFCdiff, for detecting differences between two IFC files. This approach starts with a comprehensive analysis of structure and content of each IFC file, and then constructs its hierarchical structure along with eliminating redundant instances. Next, the two hierarchical structures are compared with an iterative bottom-up procedure instead of the original files. The presented approach takes into account the content of IFC files fully without the need of flattening instances in IFC files. In contrast with previous methods, our approach can greatly reduce the computational time and space, and the comparison result is not sensitive to redundant instances in IFC files. Finally, we demonstrate a potential application to incremental backup of IFC files. The software can be found at: <a href="http://cgcad.thss.tsinghua.edu.cn/liuyushen/ifcdiff/">http://cgcad.thss.tsinghua.edu.cn/liuyushen/ifcdiff/</a>. 
+
+			</div>
+			<div class="itemName"> Video Demo:</div>
+			<div class="itemContent" style="text-align:center">
+				<video width="800" height="480" controls="controls">
+					<source src="videos/IFCdiff.mp4" type="video/mp4">
+				</video>				 
+			</div>
+			<div class="itemName"> Software &amp; Samples:</div>
+			<div class="itemContent">
+				IFCdiff[<a href="./index_software.html">Website</a>] &nbsp;&nbsp;&nbsp;<br>
+				
+			</div>
+			<div class="itemName"> Results:</div>
+			<div class="itemContent">
+				Test cases: All-Models [<a href="ifc/ifcModels.zip">33.8MB</a>] <br/><br/>
+				M1-R [<a href="./model/M1-R.ifc">0.59MB</a>] &nbsp;&nbsp;&nbsp;
+				M2-A [<a href="./model/M2-A.ifc">1.04MB</a>] &nbsp;&nbsp;&nbsp;
+				M3-R [<a href="./model/M3-R.ifc">2.52MB</a>] &nbsp;&nbsp;&nbsp;
+				M4-A[<a href="./model/M4-A.ifc">9.82MB</a>] &nbsp;&nbsp;&nbsp;<br /><br />
+				M1 [<a href="./model/M1.ifc">0.43MB</a>] &nbsp;&nbsp;&nbsp;
+				M2 [<a href="./model/M2.ifc">1.26MB</a>] &nbsp;&nbsp;&nbsp;
+				M3 [<a href="./model/M3.ifc">3.51MB</a>] &nbsp;&nbsp;&nbsp;
+				M4 [<a href="./model/M4.ifc">4.36MB</a>] &nbsp;&nbsp;&nbsp;<br /><br />
+				
+				
+				<a href="./images/performancemodel.jpg"><img src="./images/performancemodel.jpg" width="750" alt="models of experiment"></a>
+				<blockquote class="it">
+					Figure 3: Visualizing the models of four IFC files testing performance of our algorithm. We import these 4 models into Revit(eg. M1-R,M3-R) or ArchiCAD(eg. M2-A,M4-A) and exported IFC files, then run 4 tests to compare them with the original ones.(4 tests: M1-R and M1, M2-A and M2, M3-R and M3, M4-A and M4).
+				</blockquote>
+			</div>
+			<div class="itemName">Acknowledgements:</div>
+			<div class="itemContent">
+				The research is supported by the National Science Foundation of China (61472202, 61272229) and the National Technological Support Program for the 12th-Five-Year Plan of China (2012BAJ03B07).
+			</div>
+			<hr>
+			<div class="itemName">Contact:</div>
+			<div class="itemContent">
+				<a name="comm" id="comm"></a>
+				Dr. Yu-Shen Liu, Email address: <a href="mailto:liuyushen@tsinghua.edu.cn">liuyushen@tsinghua.edu.cn</a>.<br>
+				Xin Shi, Email address: <a href="mailto:coolstone712@126.com">cooltone712@126.com</a>.
+			</div>
+		</div>
+		<script src="../common/js/jquery-1.5.min.js" type="text/javascript" ></script>
+		<script type="text/javascript" src="../common/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+		<script type="text/javascript" src="../common/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		<link rel="stylesheet" type="text/css" href="../common/js/fancybox/jquery.fancybox-1.3.4.css" media="screen">
+		<script type="text/javascript" >
+		<!--
+			$(function() {
+				$("a:has(img):not(.down)").fancybox({
+						'overlayShow'	: false,
+						'transitionIn'	: 'elastic',
+						'transitionOut'	: 'elastic'
+				});
+			})
+		-->
+		</script>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+@article{Liu15IFCCompressor,
+  author    = {Jing Sun and Yu-Shen Liu and Ge Gao and Xiao-Guang Han},
+  title     = {{IFCCompressor: A content-based compression algorithm for optimizing Industry Foundation Classes files}},
+  journal   = {Automation in Construction},
+  volume    = {50},
+  number    = {},
+  pages     = {1--15},
+  year      = {2015},
+}
