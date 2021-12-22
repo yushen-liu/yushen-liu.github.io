@@ -1,0 +1,9 @@
+@article{Liu15IFCQE,
+  author    = {Ge Gao and Yu-Shen Liu and Meng Wang and Ming Gu and Jun-Hai Yong},
+  title     = {{A query expansion method for retrieving online BIM resources based on Industry Foundation Classes}},
+  journal   = {Automation in Construction},
+  volume    = {56},
+  number    = {},
+  pages     = {14--25},
+  year      = {2015},
+}
