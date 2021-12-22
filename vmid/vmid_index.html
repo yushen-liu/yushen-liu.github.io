@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0058)http://cgcad.thss.tsinghua.edu.cn/liuyushen/IFCCompressor/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta content="all" name="robots" />
+		<meta name="author" content="Yu-Shen Liu,Karthik,Min Liu" />
+		<meta name="Copyright" content="© BIM Research Group, School of Software, Tsinghua University" />
+		<meta name="description" content="VMID: A Program for Volumetric Model Inner Distances (VMID)" />
+		<meta name="keywords" content="Volumetric Model Inner Distances, VMID" />
+		<link rel="icon" href="../sub/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="../sub/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" rev="stylesheet" href="../sub/index.css" type="text/css" media="all" />
+		<title>VMID: A Program for Volumetric Model Inner Distances (VMID)</title>
+	</head>
+	<style type="text/css">
+	.row {
+		display: inline-block;
+	}
+	</style>
+	<body>
+		<div class="main">
+			<div class="centerContent">
+				<div class="banner">
+				</div>
+				<h1 class="paperTitle">VMID: A Program for Volumetric Model Inner Distances (VMID)</h1>
+				<p class="authors">
+				<a href="http://cgcad.thss.tsinghua.edu.cn/liuyushen/">Yu-Shen Liu</a><sup>a<a class="star" href="http://cgcad.thss.tsinghua.edu.cn/liuyushen/IFCCompressor/#comm">*</a></sup>,
+					<a>Karthik Ramani</a><sup>a</sup>,
+					<a>Min Liu</a><sup>a</sup>
+				
+				</p>
+				<p class="contact">
+					<sup>a</sup>School of Mechanical Engineering <br>
+					School of Electrical Computer Engineering (by courtesy)<br>
+					Purdue University, West Lafayette, IN, 47907, USA<br>
+				</p>
+				<hr>
+			</div>
+			<div class="itemName">Abstract:</div>
+			<div class="itemContent">A new method is presented for computing the inner distances of a 3D shape represented by a volumetric model. The inner distance is defined as the length of the shortest path between landmark points within the shape. The inner distance is robust to articulation and can reflect well deformation of shape structure without an explicit decomposition. Our method is based on the visibility graph approach. To check the visibility between pairwise points, we propose a novel, fast, and robust visibility checking algorithm based on a clustering technique and it operates directly on the volumetric model without any surface reconstruction procedure, where an octree is used for accelerating computation. The inner distance can be used as a replacement for other distance measures to build more accurate description for complex shapes, especially for those with articulated parts.
+
+			</div>
+			<div class="itemName"> Source &amp; Demo:</div>
+			<div class="itemContent">
+				<a href="bin/demo.zip">Demo.zip</a> <br/>
+				<a href="bin/source.zip">Source.zip</a>
+			</div>
+			<div class="itemName"> Paper:</div>
+			<div class="itemContent">
+				<b>Yu-Shen Liu</b>, Karthik Ramani, Min Liu. Computing the inner distances of volumetric models for articulated shape description with a visibility graph. IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), 2011, 23(12): 2538-2544.
+			</div>
+			<div class="itemName">Acknowledgements:</div>
+			<div class="itemContent">
+				We would like to thank Dr. Tao Ju and Mr. Sasakthi Abeysinghe for providing the code for inputting the volumetric models during our work. Yi Fang also discussed some applications in molecular shape comparison. The models used in this paper were provided by the AIM@SHAPE project and Ran Gal. This material is partly based upon work supported by the National Science Foundation under Grant IIS No. 0535156. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+			</div>
+		</div>
+		<script src="../common/js/jquery-1.5.min.js" type="text/javascript" ></script>
+		<script type="text/javascript" src="../common/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+		<script type="text/javascript" src="../common/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		<link rel="stylesheet" type="text/css" href="../common/js/fancybox/jquery.fancybox-1.3.4.css" media="screen">
+		<script type="text/javascript" >
+		<!--
+			$(function() {
+				$("a:has(img):not(.down)").fancybox({
+						'overlayShow'	: false,
+						'transitionIn'	: 'elastic',
+						'transitionOut'	: 'elastic'
+				});
+			})
+		-->
+		</script>
+	</body>
+</html>
