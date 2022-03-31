@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="./css/pmp.css">
+
+    </head>
+    <body>
+      <div class="screen">
+        <div style="position: relative; height: 76px;">
+          <p style="font-style: italic ;color:dimgray ;height:76px; line-height: 76px; display: block; position:absolute; left: 0; top: 0; font-size:25px; font-weight: 600;">TPAMI 2022</p>
+          <img src="./images/logo.jpg" alt="" style="text-align: right; position:absolute; right: 0; top: 0;">
+        </div>
+        <section class="top">
+          <div style='width: 100%;text-align:center; font-size:36px; margin:0 auto; font-weight: 700;'>
+            <br><br>
+            PMP-Net++: Point Cloud Completion by Transformer-Enhanced Multi-step Point Moving Paths
+            <br><br>
+          </div>
+  
+          <div class="authors" style="margin-top: -40px;">
+            <p class="authors" style="margin: auto 0;">
+              <a href="https://scholar.google.com/citations?user=7gcGzs8AAAAJ&hl=en" target="_blank">Xin Wen</a><sup>1,4</sup>&nbsp;&nbsp;
+              <a href="">Peng Xiang</a><sup>1</sup>&nbsp;&nbsp;
+              <a href="https://h312h.github.io/" target="_blank">Zhizhong Han</a><sup>2</sup>&nbsp;&nbsp;
+              <a href="https://scholar.google.com/citations?user=50194vkAAAAJ&hl=en" target="_blank">Yan-Pei Cao</a><sup>3</sup>&nbsp;&nbsp;
+            </p>
+            <p class="authors">
+              <a href="">Pengfei Wan</a><sup>3</sup>&nbsp;&nbsp;
+              <a href="">Wen Zheng</a><sup>3</sup>&nbsp;&nbsp;
+              <a href="https://yushen-liu.github.io/" target="_blank">Yu-Shen Liu</a><sup>1*</sup>
+            </p>
+            
+            
+          </div>
+          <div class="organizations">
+            <div><sup>1</sup><a href="https://www.thss.tsinghua.edu.cn/publish/soften/index.html" target="_blank">School of Software, BNRist, Tsinghua University, Beijing, China</a></div>
+            <div><sup>2</sup><a href="https://www.cs.umd.edu/" target="_blank">Department of Computer Science, University of Maryland, College Park, USA</a></div>
+            <div><sup>3</sup><a href="https://www.kuaishou.com/en" target="_blank">Kuaishou Technology, Beijing, China</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>4</sup><a href="https://jdlogistics.com/" target="_blank">JD.com, China</a></div>
+          </div>
+        </section>
+        <img class="teaser" src="./images/teaser.png" alt=""><!---->
+        
+
+        <div style="width: 100%;margin: 20px 0 50px 0;">
+          <b class="subtitle">Materials </b>
+          <div class="materials">
+            <div style="width: 150px;">
+              <a href="https://ieeexplore.ieee.org/document/9735342" target="_blank" style="display: block ;width: 150px;">
+                <img src="./images/cover.png" alt="" style="width: 100%;">
+              </a>
+              <p class="hyperlink"><a href="https://ieeexplore.ieee.org/document/9735342" target="_blank">Paper</a><a href="https://arxiv.org/abs/2202.09507" target="_blank" style="float: right;">arXiv</a></p>
+            </div>
+
+            <div style="width: 150px;">
+              <a href="https://github.com/diviswen/PMP-Net" target="_blank" style="display: block ;width: 150px;">
+                <img src="./images/icon_github.png" alt="" style="width: 100%;">
+              </a>
+              <p class="hyperlink"><a href="https://github.com/diviswen/PMP-Net" target="_blank">PyTorch</a><a href="https://github.com/diviswen/PMP-Net/tree/main/PMPPlus-Jittor" target="_blank" style="float: right;">Jittor</a></p>
+            </div>
+
+            <div>
+              <a href="https://cg.cs.tsinghua.edu.cn/jittor/ " target="_blank" style="display: block ;width: 220px; transform: translateY(-30px);">
+                <img src="./images/logo_jittor.svg" alt="" style="width: 100%; ">
+              </a>
+              <p class="hyperlink" style="text-align: center; text-align-last: center;"><a href="https://cg.cs.tsinghua.edu.cn/jittor/ " target="_blank">Jittor 计图官网</a></p>
+            </div>
+          </div>
+        </div>
+        <div >
+          <b class="subtitle">Abstract </b>
+          <p style="width: 100%; display: block; margin: 0 auto 20px auto;text-align:justify; text-justify: distribute-all-lines; color: #6e6d6d; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            Point cloud completion concerns to predict missing part for incomplete 3D shapes. A common strategy is to generate complete shape according to incomplete input. However, unordered nature of point clouds will degrade generation of high-quality 3D shapes, as detailed topology and structure of unordered points are hard to be captured during the generative process using an extracted latent code. We address this problem by formulating completion as point cloud deformation process. Specifically, we design a novel neural network, named PMP-Net++, to mimic behavior of an earth mover. It moves each point of incomplete input to obtain a complete point cloud, where total distance of point moving paths (PMPs) should be the shortest. Therefore, PMP-Net++ predicts unique PMP for each point according to constraint of point moving distances. The network learns a strict and unique correspondence on point-level, and thus improves quality of predicted complete shape. Moreover, since moving points heavily relies on per-point features learned by network, we further introduce a transformer-enhanced representation learning network, which significantly improves completion performance of PMP-Net++. We conduct comprehensive experiments in shape completion, and further explore application on point cloud up-sampling, which demonstrate non-trivial improvement of PMP-Net++ over state-of-the-art point cloud completion/up-sampling methods.
+          </p>
+        </div>
+        <div style="width: 100%;margin: 50px 0 50px 0;">
+          <b class="subtitle">Qualitative Results</b>
+          <img src="./images/VIS_PCN.png" alt="" style="display: block; width: 900px; margin: 10px auto 30px auto;">
+          <img src="./images/VIS_c3d.png" alt="" style="display: block; width: 900px; margin: 30px auto;">
+          <img src="./images/VIS_PU.png" alt="" style="display: block; width: 800px; margin: 30px auto;">
+        </div>
+
+        <div style="width: 100%;margin: 50px 0 50px 0;">
+          <b class="subtitle">Quantitative Results</b>
+          <img src="./images/PCN.png" alt="" style="display: block; width: 800px; margin: 10px auto 30px auto;">
+          <img src="./images/c3d.png" alt="" style="display: block; width: 800px; margin: 30px auto;">
+          <img src="./images/PU.png" alt="" style="display: block; width: 500px; margin: 30px auto;">
+        </div>
+
+        
+  
+          <div style="height: 400px;background-color:#F0F0F0; margin: 20px 0 50px 0;">
+              <div style="width:max-content; margin: 0 auto;text-align:left; font-size:16px; line-height:100%;">
+              <br>
+              <pre>
+                  <code style="width: 100%; height: 800px;">
+          @ARTICLE{pmp++,
+            author={Wen, Xin and Xiang, Peng and Han, Zhizhong and Cao, Yan-Pei and Wan, Pengfei and Zheng, 
+            Wen and Liu, Yu-Shen},
+            journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+            title={PMP-Net++: Point Cloud Completion by Transformer-Enhanced Multi-step Point Moving Paths}, 
+            year={2022},
+            volume={},
+            number={},
+            pages={1-1},
+            doi={10.1109/TPAMI.2022.3159003}
+          }
+
+          @InProceedings{Wen_2021_CVPR,
+            author    = {Wen, Xin and Xiang, Peng and Han, Zhizhong and Cao, Yan-Pei and Wan, Pengfei and Zheng, 
+            Wen and Liu, Yu-Shen},
+            title     = {PMP-Net: Point Cloud Completion by Learning Multi-Step Point Moving Paths},
+            booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+            month     = {June},
+            year      = {2021},
+            pages     = {7443-7452}
+          }
+                  </code>
+              </pre>
+              <br>
+  
+              </div>
+          </div>
+  
+  
+        </section>
+      </div>
+      
+
+    </body>
+</html>
